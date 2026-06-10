@@ -1,29 +1,62 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Login - Crimsin</title>
+<title>Crimsin</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0b0f14;
+    color:white;
+}
+
+.header{
+    background:#111827;
+    padding:15px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.header a{
+    color:white;
+    text-decoration:none;
+}
+
+.container{
+    padding:40px;
+    text-align:center;
+}
+
+.card{
+    background:#111827;
+    padding:20px;
+    margin:20px auto;
+    width:300px;
+    border-radius:10px;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Login Page</h1>
-
-<input placeholder="Username"><br><br>
-<input type="password" placeholder="Password"><br><br>
-
-<button onclick="window.location.href='dashboard.html'">
-Login
-</button>
-
-<br><br>
-<a href="index.html">Back Home</a>
-
-</body>
-  <div style="background:#111; padding:10px;">
-    <a href="index.html" style="color:white; margin-right:10px;">Home</a>
-    <a href="login.html" style="color:white; margin-right:10px;">Login</a>
-    <a href="dashboard.html" style="color:white; margin-right:10px;">Dashboard</a>
-    <a href="signals.html" style="color:white;">Signals</a>
+<div class="header">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="signals.html">Signals</a>
 </div>
 
-<hr>
+<div class="container">
+
+<h1>CRIMSIN</h1>
+<p>AI Trading Platform (Frontend Prototype)</p>
+
+<div class="card">
+    <h3>Status</h3>
+    <p>System Running (Demo Mode)</p>
+</div>
+
+</div>
+
+</body>
 </html>
