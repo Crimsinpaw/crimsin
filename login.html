@@ -2,40 +2,70 @@
 <html>
 <head>
 <title>Login - Crimsin</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0b0f14;
+    color:white;
+}
+
+.header{
+    background:#111827;
+    padding:15px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.header a{
+    color:white;
+    text-decoration:none;
+}
+
+.container{
+    padding:40px;
+    text-align:center;
+}
+
+input{
+    padding:10px;
+    margin:5px;
+}
+</style>
 </head>
+
 <body>
+
+<div class="header">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="signals.html">Signals</a>
+</div>
+
+<div class="container">
 
 <h1>Login</h1>
 
-<input id="user" placeholder="Username"><br><br>
+<input id="user" placeholder="Username"><br>
 <input id="pass" type="password" placeholder="Password"><br><br>
 
 <button onclick="login()">Login</button>
 
 <script>
 function login(){
-    var u = document.getElementById("user").value;
-    var p = document.getElementById("pass").value;
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
 
-    if(u === "admin" && p === "1234"){
-        // IMPORTANT: this is what fixes your issue
-        window.location.replace("dashboard.html");
+    if(u=="admin" && p=="1234"){
+        window.location.href="dashboard.html";
     } else {
-        alert("Wrong username or password");
+        alert("Wrong login");
     }
 }
 </script>
 
-<br><br>
-<a href="index.html">Back Home</a>
-
-</body>
-    <div style="background:#111; padding:10px;">
-    <a href="index.html" style="color:white; margin-right:10px;">Home</a>
-    <a href="login.html" style="color:white; margin-right:10px;">Login</a>
-    <a href="dashboard.html" style="color:white; margin-right:10px;">Dashboard</a>
-    <a href="signals.html" style="color:white;">Signals</a>
 </div>
 
-<hr>
+</body>
 </html>
